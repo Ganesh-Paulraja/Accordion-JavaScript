@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+body {
+  background-color: gray;
+}
+.full-acc-box {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 20px;
+}
+.acc-btn {
+    border: none;
+    border-top: 2px solid #9fb1bd;
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: block;
+    text-align: left;
+    height: 50px;
+    padding-left: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.acc-btn img {
+  width: 30px;
+  position: relative;
+  top: 3px;
+}
+.acc-btn h2 {
+  display: inline-block;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.acc-btn .cc-arrow {
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    right: 22px;
+    top: 18px;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+.acc-content {
+    text-align: justify;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    transform-origin: 100% 0%;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.acc-active .acc-content {
+  display: block;
+  max-height: 129px;
+}
+.acc-active .cc-arrow {
+  transform: rotate(135deg);
+}
